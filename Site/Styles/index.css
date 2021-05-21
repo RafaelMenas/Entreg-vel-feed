@@ -1,7 +1,7 @@
 * {
     padding: 0;
     box-sizing: border-box;
-    --alo: #EFEFEF;
+    --cinza: #EFEFEF;
 }
 
 body {
@@ -12,27 +12,79 @@ body {
 
 header {
     width: 100%;
-    height: 8.8rem;
-    background-color: var(--alo);
+    height: 6.8rem;
+    background-color: var(--cinza);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5em; 
 }
 
-/* Search
- * Search 
- * Search 
- */
+nav {
+    width: 4.5rem;
+    height: 5rem;
+    padding: 5em;
+    margin: 0 5em; 
+    position: absolute; 
+    right: 5em;  
+}
+
+/*
+*Header
+*Header
+*Header
+*/
+
+#Nome{
+    position: relative;
+    top: -0.5rem; 
+}
 
 #Search {
-    width: 30rem; 
+    width: 40%; 
     border: 1px solid;
-    height: 4rem;
+    height: 2.8rem;
     padding: 0 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    left: -5rem;
+    bottom: -0.25rem; 
 }
 
 #Search > input {
-    width: 80%; 
+    width: 100%; 
     border: none; 
     font-size: 1rem;
+    background-color: white
+}
+
+#Search img {
+    width: 30px
+}
+
+#Assuntos {
+    position: relative;
+    left: -13rem;
+}
+
+#Icones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+}
+
+/*
+*Nav
+*Nav
+*Nav
+*/
+
+#Logo {
+    position: absolute; 
+    width: 60%;
 }
