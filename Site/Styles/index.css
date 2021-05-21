@@ -2,6 +2,7 @@
     padding: 0;
     box-sizing: border-box;
     --cinza: #EFEFEF;
+    --vermelho: #FF6B6B;
 }
 
 body {
@@ -23,10 +24,9 @@ header {
 nav {
     width: 4.5rem;
     height: 5rem;
-    padding: 5em;
-    margin: 0 5em; 
+    padding: 1em;
     position: absolute; 
-    right: 5em;  
+    right: 0.5em;  
 }
 
 /*
@@ -59,7 +59,7 @@ nav {
     width: 100%; 
     border: none; 
     font-size: 1rem;
-    background-color: white
+    background-color: white; 
 }
 
 #Search img {
@@ -87,4 +87,64 @@ nav {
 #Logo {
     position: absolute; 
     width: 60%;
+}
+
+/*
+*Aside
+*Aside
+*Aside
+*/
+
+aside {
+    width: 20%;
+    height: 100%;
+    border: 1px solid var(--cinza);
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+#piu {
+    width: 15rem;
+    height: 5rem;
+    margin: 20px 30px 80px 30px; 
+    
+}
+
+#iconesabas {
+    display: block;
+    border: 1px solid var(--cinza);
+    border-radius: 10px;
+    margin: 70px 40px 0px 20px;
+}
+
+.abas {
+    padding:30px 70px ;
+    width: 80%;
+    position: relative;
+    left: 35px; 
+}
+
+.abas:hover {
+    width: 85%;
+}
+
+
+
+/*
+*Section
+*Section
+*Section
+
+
+section {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    border: 10px solid red;
+    position: absolute;
+    top: center;
+    left: center;
+    
 }
