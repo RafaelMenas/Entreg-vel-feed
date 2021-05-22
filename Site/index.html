@@ -5,50 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Styles/reset.css" type="text/css"/>
-    <link rel="stylesheet" href="./Styles/index.css" type="text/css"/> 
+    <!--- <link rel="stylesheet" href="./Styles/index.css" type="text/css"/> --->
+    <link rel="stylesheet" href="./Styles/section.css" type="text/css"/>
+    <link rel="stylesheet" href="./Styles/headeraside.css" type="text/css"/>
     <link rel="icon" href="Image/nev/Pena logo.png">
 
     <title>Piupiuwer - Faça novos amigos</title>
 </head>
 <body>
-    <header>
-        <img  id="Nome" src="../Site/Image/Header/Nome da empresa.png" alt="Nome Piupiuwer">
-        <div id="Search">
-            <input type="text" placeholder="Search on Piupiuwer">
-            <img  id="Assuntosgerais" src="../Site/Image/Header/Lupa.png" alt="Assuntos gerais">
-        </div>
-        <div id="Icones">
-            <div id="Assuntos">
-                <img  id="Assuntosgerais" src="../Site/Image/Header/icone_de_assuntos_gerais.png" alt="Icone de assuntos gerais">
-                <img  id="Emalta" src="../Site/Image/Header/em_alta.png" alt="Em alta">
+    
+        <header> 
+            <h1><img  id="Nome" src="../Site/Image/Header/Nome da empresa.png" alt="Nome Piupiuwer"></h1>
+            <div id="Search">
+                <input type="text" placeholder="Search on Piupiuwer">
+                <img  id="Lupa" src="../Site/Image/Header/Lupa.png" alt="Assuntos gerais">
             </div>
+            
+            <ul id="Icones">
+                    <li><img  id="Assuntosgerais" src="../Site/Image/Header/icone_de_assuntos_gerais.png" alt="Icone de assuntos gerais"></li>
+                    <li><img  id="Emalta" src="../Site/Image/Header/em_alta.png" alt="Em alta"></li>
+            </ul> 
+
                 <img  id="Perfil" src="../Site/Image/Header/Perfil.png" alt="Perfil">
+            </header>
+            <div id="Site">
+                
+            <aside>
+
+                <img  id="Logo" src="../Site/Image/nev/Pena logo.png" alt="Logo Piupiuwer">
+
+                <div id="Esquerdo">
+                   
+                        <ul id="Navegacao">
+                            <li><img class="abas" src="../Site/Image/aside/Home.png" alt="Home"></li>
+                            <li><img class="abas" src="../Site/Image/aside/Explore.png" alt="Explore"></li>
+                            <li><img id="Notifications" class="abas" src="../Site/Image/aside/Notifications.png" alt="Notifications"></li>
+                            <li><img id="Messages" class="abas" src="../Site/Image/aside/Messages.png" alt="Messages"></li>
+                            <li><img id="Moretools" class="abas" src="../Site/Image/aside/More tools.png" alt="More tools"></li>
+                        </ul>
+
+                    
+                     <img id="Piu" src="../Site/Image/aside/Write your piu.png" alt="Write your piu">
+                
+                </div>
+            </aside>
+            
+            <section>
+                <div id="Todomeupost">
+                    <div id="Meupost">
+                        <div id="Fotoefrase">
+                            <img  id="Eu" src="../Site/Image/Header/Perfil.png" alt="Perfil">
+                            <p>What are you thinking?</p>
+                        </div>
+                        <div id="Escrever">
+                            <input type="text" placeholder="Write here...">
+                            <p id="Eu">@Eu</p>
+                        </div>
+                    </div>
+                    <div id="Cinza"></div>
+                </div>
+                   
+                    <div id="Posts">
+                        <div id="Post1">
+                            <div id="Pessoa01">
+                                <img  class="pessoas" src="../Site/Image/Header/Perfil.png" alt="Perfil">
+                                <div id="arroba1">
+                                    <h2 class="nome">AAAAAAA</h2>
+                                    <div id="arroba01"><p>@CCCC</p></div>
+                                </div>
+                            </div>
+                            <div id="Mensagem01">
+                                <p id="Texto1">BBBBBBBB</p>
+                                <div id="Reações">
+                                    <img  class="replie" src="../Site/Image/Section/replie.png" alt="replie"> <p>0</p>
+                                    <img  class="repiu" src="../Site/Image/Section/Repiu.png" alt="Repiu"> <p>0</p>
+                                    <img  class="like" src="../Site/Image/Section/like.png" alt="like"> <p>0</p>
+                                </div>
+                                
+                            </div>
+                            
+        
+
+
+                        </div>
+
+                    </div>
+            </section>
+            
         </div>
-        </header>
-        <nav>
-            <img  id="Logo" src="../Site/Image/nev/Pena logo.png" alt="Logo Piupiuwer">
-        </nav>
-        <aside>
-            <div id="esquerdo">
-                <div id="iconesabas">
-                    <ul>
-                        <li><img class="abas" src="../Site/Image/aside/Home.png" alt="Home"></li>
-                        <li><img class="abas" src="../Site/Image/aside/Explore.png" alt="Explore"></li>
-                        <li><img class="abas" src="../Site/Image/aside/Notifications.png" alt="Notifications"></li>
-                        <li><img class="abas" src="../Site/Image/aside/Messages.png" alt="Messages"></li>
-                        <li><img class="abas" src="../Site/Image/aside/More tools.png" alt="More tools"></li>
-                    </ul>
-                </div>
-                <div id="piu">
-                    <img id="piu" src="../Site/Image/aside/Write your piu.png" alt="Write your piu">
-                </div>
-            </div>
-        </aside>
-        <!----
-        <section>
-        </section>
-        -->
-         
-    <script src="Programação.js"></script>
-</body>
-</html>
+        
+        
+        
+        <script src="Programação.js"></script>
+        
+    </body>
+    </html>     

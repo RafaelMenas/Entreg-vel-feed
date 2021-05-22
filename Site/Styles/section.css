@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    --cinza: #EFEFEF;
+    --vermelho: #FF6B6B;
+    outline: none;
+    border-style: solid;
+}
+
+
+section {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position:absolute;
+    top: 10rem;
+    left: 25%; 
+    border: 1px;
+    border-color: var(--cinza);
+    border-style: solid;
+    overflow:scroll;
+}
+
+/*
+*Meus posts
+*Meus posts
+*Meus posts
+*/
+
+#Todomeupost {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#Meupost {
+    margin: 2rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--cinza);
+}
+
+#Fotoefrase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--cinza);
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+}
+
+#Fotoefrase p {
+    font-size: 2rem;
+    margin-right: 40%;
+
+}
+
+#Fotoefrase img {
+    margin-left: 1rem;
+}
+
+#Escrever {
+    height: 15rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Escrever input{
+    width: 100%;
+    height: 80%;
+    border: none; 
+    font-size: 1rem;
+    background-color: white; 
+    outline: none;
+    margin-right: 3rem;
+    margin-bottom: 8rem;
+}
+
+#Escrever p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-left: 30rem;
+    
+}
+
+#Cinza {
+    background-color: var(--cinza);
+    width: 90%;
+    height: 2rem;
+    margin-top: -2rem ;
+}
+
+/*
+*Outros posts
+*Outros posts
+*Outros posts
+*/
+
+#Posts {
+    width: 90%;
+    border: #EFEFEF;
+    margin-bottom: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nome {
+    font-size: 1.2rem;
+}
+
+.pessoas {
+    margin: 1rem; 
+}
+
+.repiu, .replie, .like {
+    width: 1.5rem;
+}
+
+
+#Post1 {
+    width: 100%;
+    border: 1px solid var(--cinza);
+}
+
+#Pessoa01 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--cinza);
+}
+
+#Pessoa01 h2 {
+    margin-right: 30rem;
+}
+
+#Mensagem01 {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Texto1 {
+    margin-top: 2rem;
+    margin-right: 35rem;
+}
+
+#arroba1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#Reações {
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-right: 25rem;
+}
+

@@ -41,7 +41,65 @@ nav {
 }
 
 #Search {
-    width: 40%; 
+
+section {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position:absolute;
+    top: 10rem;
+    left: 25%; 
+    border: 1px;
+    border-color: var(--cinza);
+    border-style: solid;
+    overflow:scroll;
+}
+
+#Meupost {
+    margin: 2rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--cinza);
+}
+
+#Fotoefrase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--cinza);
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+}
+
+#Fotoefrase p {
+    font-size: 2rem;
+    margin-right: 34%;
+
+}
+
+#Fotoefrase img {
+    margin-left: 1rem;
+}
+
+#Escrever {
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Escrever input{
+    width: 100%;
+    height: 80%;
+}
     border: 1px solid;
     height: 2.8rem;
     padding: 0 1.2rem;
@@ -63,7 +121,8 @@ nav {
 }
 
 #Search img {
-    width: 30px
+    width: 30px;
+    
 }
 
 #Assuntos {
@@ -112,7 +171,6 @@ aside {
 }
 
 #iconesabas {
-    display: block;
     border: 1px solid var(--cinza);
     border-radius: 10px;
     margin: 70px 40px 0px 20px;
@@ -129,8 +187,15 @@ aside {
     width: 85%;
 }
 
-
-
+section {
+    width: 60%;
+    height: 100%;
+    background-color: #FF6B6B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 /*
 *Section
 *Section
