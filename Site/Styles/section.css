@@ -59,16 +59,24 @@ section {
 
 #Fotoefrase p {
     font-size: 2rem;
-    margin-right: 40%;
+    margin-right: 30%;
 
 }
+
+#Fotoefrase h2 {
+    font-size: 1.0rem;
+    margin-top: 3.5rem;
+    margin-right: 1rem;
+
+}
+
 
 #Fotoefrase img {
     margin-left: 1rem;
 }
 
 #Escrever {
-    height: 15rem;
+    height: 10rem;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -83,11 +91,11 @@ section {
     font-size: 1rem;
     background-color: white; 
     outline: none;
-    margin-right: 3rem;
-    margin-bottom: 8rem;
+    margin-left: 2rem;
+    margin-bottom: 6rem;
 }
 
-#Escrever p{
+#Escrever h2{
     font-size: 1.2rem;
     margin-bottom: 1rem;
     margin-left: 30rem;
@@ -100,6 +108,17 @@ section {
     height: 2rem;
     margin-top: -2rem ;
 }
+
+#Submit {
+    width: 8rem;
+    margin: 0 1rem 1rem 32rem;
+    height: 3rem;
+    background-color: #FF6B6B;
+    color: var(--cinza);
+    border: 1px solid #FF5454;
+}
+
+
 
 /*
 *Outros posts
@@ -115,6 +134,11 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+.postn {
+    width: 42rem;
+    border: 1px solid var(--cinza);
+
 }
 
 .post {

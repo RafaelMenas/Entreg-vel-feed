@@ -1,0 +1,16 @@
+                            <div class="pessoa">
+                                <div class="imagens"></div>
+                                <div class="arroba">
+                                    <div class="nome">
+                                    </div>
+                                    <div class="arroba0">
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="mensagem">
+                                    <div class="texto"></div>
+                                    <div class="reações">
+                                        <img  class="replie" src="../Site/Image/Section/replie.png" alt="replie"> <p class="preplies">0</p>
+                                        <img  class="repiu" src="../Site/Image/Section/Repiu.png" alt="Repiu"> <p class="prepiu">0</p>
+                                        <img  class="like" src="../Site/Image/Section/like.png" alt="like"> <p class="plike">0</p>
+                                </div>
