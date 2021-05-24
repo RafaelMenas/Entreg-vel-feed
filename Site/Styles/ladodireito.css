@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    --cinza: #EFEFEF;
+    --vermelho: #FF6B6B;
+    outline: none;
+    border-style: solid;
+}
+
+#ladodireito {
+    width: 30%;
+    position: absolute;
+    right: 3rem;
+    top: 13rem;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#direito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tudoassuntos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 25rem;
+    height: 30rem;
+    border: 5px solid var(--vermelho);
+    margin-bottom: 10rem;
+    border-radius: 3rem;
+}
+
+.peopleknow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 14rem;
+    border-radius: 3rem;
+    border: 5px solid var(--vermelho);
+}
+
+
+/*
+*Aba de assuntos
+*Aba de assuntos
+*Aba de assuntos
+*/
+
+.boxgrandetitulo {
+    margin-top: 1rem;
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.assuntos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--cinza);
+    margin: 1.5rem 0 0 0rem;
+    font-size: 1.2rem;
+}
+
+#assunto1 {
+    width: 18rem;
+    height: 3rem;
+    background-color: white;
+    border: 1px solid var(--vermelho);
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+#assunto2 {
+    width: 18rem;
+    height: 3rem;
+    background-color: white;
+    border: 1px solid var(--vermelho);
+    margin-bottom: 2rem;
+    padding: 1rem; 
+}
+
+#assunto3 {
+    width: 18rem;
+    height: 3rem;
+    background-color: white;
+    border: 1px solid var(--vermelho);
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.readmore {
+    color: #FF6B6B;
+}
+
+/*
+*Aba de novos amigos
+*Aba de novos amigos
+*Aba de novos amigos
+*/
+
+.titulopeopleknow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulopeopleknow h3{
+    font-size: 1.6rem;
+    
+}
+
+.viewmore {
+    color: red;
+    font-size: 1.2rem;
+}
+
+.someone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.someone01 {
+    width: 18rem;
+    height: 3rem;
+    border: 1px solid var(--vermelho);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.someone01 p{
+    width: 6rem;
+    font-size: 1rem;
+    position: relative;
+    right: 2rem;
+}
+
+.someoneimg01 img{
+    margin-right: 1rem;
+    width: 2.6rem;
+    height: 2.0rem;
+    border: 1px solid var(--vermelho);
+    position: relative;
+    right:1.4rem;
+}
+
+.someone02 {
+    width: 18rem;
+    height: 3rem;
+    border: 1px solid var(--vermelho);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.someone02 p{
+    width: 6rem;
+    font-size: 1rem;
+    position: relative;
+    right: 2rem;
+}
+
+.someoneimg02 img {
+    margin-right: 1rem;
+    width: 2.6rem;
+    height: 2.0rem;
+    border: 1px solid var(--vermelho);
+    position: relative;
+    right:1.4rem;
+}
+
+.follow {
+    position: relative;
+    left: 1rem;
+}

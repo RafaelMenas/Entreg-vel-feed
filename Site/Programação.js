@@ -186,15 +186,19 @@ function amigos() {
     username9.innerHTML = pessoa.response[9].username;
     
     //décimo primeiro post
+    var imagem10 = document.createElement("img");
     var mensagem10 = document.createElement("p");
     var nome10 = document.createElement("h2");
     var username10 = document.createElement("p");
+    var lugarimagem10 = document.getElementById("imagem10");
     var lugarmensagem10 = document.getElementById("mensagem10");
     var lugarnome10 = document.getElementById("nome10");
     var lugarusername10 = document.getElementById("username10");
+    lugarimagem10.appendChild(imagem10);
     lugarmensagem10.appendChild(mensagem10);
     lugarnome10.appendChild(nome10);
     lugarusername10.appendChild(username10);
+    imagem10.src = pessoa.response[10].imagem;
     mensagem10.innerHTML = pessoa.response[10].mensagem;
     nome10.innerHTML = pessoa.response[10].nome;
     username10.innerHTML = pessoa.response[10].username;
@@ -234,7 +238,30 @@ function amigos() {
     mensagem12.innerHTML = pessoa.response[12].mensagem;
     nome12.innerHTML = pessoa.response[12].nome;
     username12.innerHTML = pessoa.response[12].username;
-  
+
+    //aba de novos amigos
+
+    //someone1
+    var someoneimg1 = document.createElement("img");
+    var lugarsomeoneimg1 = document.getElementById("someoneimg1");
+    lugarsomeoneimg1.appendChild(someoneimg1);
+    someoneimg1.src = pessoa.response[11].imagem;
+
+    var someonep1 = document.createElement("p");
+    var lugarsomeonep1 = document.getElementById("someonep1");
+    lugarsomeonep1.appendChild(someonep1);
+    someonep1.innerHTML = pessoa.response[5].nome;
+
+    //someone2
+    var someoneimg2 = document.createElement("img");
+    var lugarsomeoneimg2 = document.getElementById("someoneimg2");
+    lugarsomeoneimg2.appendChild(someoneimg2);
+    someoneimg2.src = pessoa.response[0].imagem;
+
+    var someonep2 = document.createElement("p");
+    var lugarsomeonep2 = document.getElementById("someonep2");
+    lugarsomeonep2.appendChild(someonep2);
+    someonep2.innerHTML = pessoa.response[0].nome;
 
 
 
