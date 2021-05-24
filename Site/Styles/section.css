@@ -107,7 +107,7 @@ section {
 *Outros posts
 */
 
-#Posts {
+.posts {
     width: 90%;
     border: #EFEFEF;
     margin-bottom: 22rem;
