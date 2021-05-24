@@ -5,18 +5,19 @@ function amigos() {
     pessoa.onload = function() {
     console.log(pessoa.response)
 
-    var submit = document.querySelector("#Submit");
-
     var a = -1;
 
-    submit.addEventListener("click", function(event) {
-        event.preventDefault();
+    for (i=0; (pessoa.response.length)>i; i++) {
 
+        if (pessoa.response[i].mensagem.length <= 140) {
+            
+            if (pessoa.response[i].imagem = "unknown") {
+                pessoa.response[i].imagem = "../Site/Image/Header/Perfil.png";
+            }
+                
+            
             a++;
-            var localpostn = document.querySelector(".novosposts");
-            var form = document.querySelector("#Spiu");
-            var tpiu = form.wpiu.value;
-
+            var localpostn = document.querySelector(".postspadrões");
             var divpostn = document.createElement("div");
             localpostn.appendChild(divpostn);
             divpostn.classList.add("postn");
@@ -67,17 +68,17 @@ function amigos() {
             var snome = sdivnome.querySelector(".nome");
             var psnome = document.createElement("h2");
             snome.appendChild(psnome);
-            psnome.innerHTML = "Eu";
+            psnome.innerHTML = pessoa.response[i].nome;
             var sarroba0 = sdivarroba0.querySelector(".arroba0");
             var psarroba0 = document.createElement("p");
             sarroba0.appendChild(psarroba0);
-            psarroba0.innerHTML = "@Eu";
+            psarroba0.innerHTML = pessoa.response[i].username;
 
             //coloca o elemento imagem dentro da div arroba0
             var simgimagem = sdivimagens.querySelector(".imagens");
             var imgimagem = document.createElement("img");
             simgimagem.appendChild(imgimagem);
-            imgimagem.scr = "../Site/Image/Section/Perfil2.png";
+            imgimagem.src = pessoa.response[i].imagem;
 
 
             //DIV MENSAGEM
@@ -99,7 +100,7 @@ function amigos() {
             var sptexto = sdivtexto.querySelector(".texto");
             var ptexto = document.createElement("p");
             sptexto.appendChild(ptexto);
-            ptexto.innerHTML = (tpiu);
+            ptexto.innerHTML = pessoa.response[i].mensagem;
 
             //coloca as reações 
             //replie
@@ -107,31 +108,58 @@ function amigos() {
             var imgreplie = document.createElement("img");
             simgreplie.appendChild(imgreplie);
             imgreplie.classList.add("replie");
-            imgreplie.scr = "../Site/Image/Section/replie.png";
+            imgreplie.src = "../Site/Image/Section/replie.png";
+
+            var spreplie = sdivreações.querySelector(".reações");
+            var preplie = document.createElement("p");
+            spreplie.appendChild(preplie);
+            preplie.classList.add("repliep");
+            preplie.innerHTML = 0;
             //repiu
             var simgrepiu = sdivreações.querySelector(".reações");
             var imgrepiu = document.createElement("img");
             simgrepiu.appendChild(imgrepiu);
             imgrepiu.classList.add("repiu");
-            imgrepiu.scr = "../Site/Image/Section/repiu.png";
+            imgrepiu.src = "../Site/Image/Section/repiu.png";
+
+            var spreplie = sdivreações.querySelector(".reações");
+            var preplie = document.createElement("p");
+            spreplie.appendChild(preplie);
+            preplie.classList.add("repiup");
+            preplie.innerHTML = 0;
             //like
             var simglike = sdivreações.querySelector(".reações");
             var imglike = document.createElement("img");
             simglike.appendChild(imglike);
             imglike.classList.add("like");
-            imglike.scr = "../Site/Image/Section/like.png";
-    
+            imglike.src = "../Site/Image/Section/like.png";
+            
+            var splike = sdivreações.querySelector(".reações");
+            var plike = document.createElement("p");
+            splike.appendChild(plike);
+            plike.classList.add("likep");
+            plike.innerHTML = 0;
+
+        }
+
+    else {
+        console.log(pessoa.response[i].nome+" "+"não seguiu o requerimento do piu de ter menos de 140 caracteres");
+
     }
+
+}   
+
     
-    
-    
-    );
+}   
 
 
-    console.log(a);
-}
+    
+   
+
 
 
 pessoa.send()
+
 }
+
 amigos()
