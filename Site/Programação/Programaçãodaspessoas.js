@@ -5,16 +5,20 @@ function amigos() {
     pessoa.onload = function() {
     console.log(pessoa.response)
 
+    
+
     var a = -1;
 
     for (i=0; (pessoa.response.length)>i; i++) {
 
         if (pessoa.response[i].mensagem.length <= 140) {
             
-            if (pessoa.response[i].imagem = "unknown") {
-                pessoa.response[i].imagem = "../Site/Image/Header/Perfil.png";
-            }
+            let x = pessoa.response[i].imagem;
                 
+            if (pessoa.response[i].imagem === "") {
+                x = "../Site/Image/Header/Perfil.png";
+                console.log("entrei no if");
+            }
             
             a++;
             var localpostn = document.querySelector(".postspadrões");
@@ -78,7 +82,7 @@ function amigos() {
             var simgimagem = sdivimagens.querySelector(".imagens");
             var imgimagem = document.createElement("img");
             simgimagem.appendChild(imgimagem);
-            imgimagem.src = pessoa.response[i].imagem;
+            imgimagem.src = x;
 
 
             //DIV MENSAGEM
@@ -117,28 +121,62 @@ function amigos() {
             preplie.innerHTML = 0;
             //repiu
             var simgrepiu = sdivreações.querySelector(".reações");
-            var imgrepiu = document.createElement("img");
+            const imgrepiu = document.createElement("img");
             simgrepiu.appendChild(imgrepiu);
             imgrepiu.classList.add("repiu");
             imgrepiu.src = "../Site/Image/Section/repiu.png";
 
-            var spreplie = sdivreações.querySelector(".reações");
-            var preplie = document.createElement("p");
-            spreplie.appendChild(preplie);
-            preplie.classList.add("repiup");
-            preplie.innerHTML = 0;
+            var sprepiu = sdivreações.querySelector(".reações");
+            const prepiu = document.createElement("p");
+            sprepiu.appendChild(prepiu);
+            prepiu.classList.add("repiup");
+            prepiu.innerHTML = 0;
             //like
             var simglike = sdivreações.querySelector(".reações");
-            var imglike = document.createElement("img");
+            const imglike = document.createElement("img");
             simglike.appendChild(imglike);
             imglike.classList.add("like");
             imglike.src = "../Site/Image/Section/like.png";
             
             var splike = sdivreações.querySelector(".reações");
-            var plike = document.createElement("p");
+            const plike = document.createElement("p");
             splike.appendChild(plike);
             plike.classList.add("likep");
             plike.innerHTML = 0;
+
+
+            //REAÇÕES
+            //REAÇÕES
+            //REAÇÕES
+
+            imglike.addEventListener("click", function () {
+                if (plike.classList.contains("liked")) {
+                    plike.classList.remove("liked");
+                    plike.textContent--;
+                }
+               else {
+                plike.classList.add("liked");
+                plike.textContent++;
+               }
+            }
+            );
+
+            
+            
+            imgrepiu.addEventListener("click", function () {
+                if (prepiu.classList.contains("liked")) {
+                    prepiu.classList.remove("liked");
+                    prepiu.textContent--;
+                }
+               else {
+                prepiu.classList.add("liked");
+                prepiu.textContent++;
+               }
+            }
+            );
+
+            
+
 
         }
 
@@ -147,11 +185,12 @@ function amigos() {
 
     }
 
+    console.log(pessoa.response[3].imagem);
+
 }   
 
     
 }   
-
 
     
    

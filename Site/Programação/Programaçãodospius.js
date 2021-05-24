@@ -11,11 +11,11 @@ function amigos() {
 
     submit.addEventListener("click", function(event) {
         event.preventDefault();
-
+        
             var form = document.querySelector("#Spiu");
             var tpiu = form.wpiu.value;
 
-            if (tpiu.length <= 140) {
+            if (tpiu.length <= 140 && tpiu.length>=1) {
                 
                 a++;
                 var localpostn = document.querySelector(".novosposts");
