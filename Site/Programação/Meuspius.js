@@ -3,7 +3,7 @@ function amigos() {
     pessoa.open("GET", "https://next.json-generator.com/api/json/get/EkyZfHLU_");
     pessoa.responseType="json"
     pessoa.onload = function() {
-    console.log(pessoa.response)
+    
 
     var submit = document.querySelector("#Submit");
 
@@ -79,7 +79,7 @@ function amigos() {
                 var simgimagem = sdivimagens.querySelector(".imagens");
                 var imgimagem = document.createElement("img");
                 simgimagem.appendChild(imgimagem);
-                imgimagem.scr = "../Site/Image/Section/Perfil2.png";
+                imgimagem.src = "../Site/Image/Section/Perfil2.png";
 
 
                 //DIV MENSAGEM

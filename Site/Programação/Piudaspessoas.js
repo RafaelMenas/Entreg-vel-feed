@@ -3,9 +3,30 @@ function amigos() {
     pessoa.open("GET", "https://next.json-generator.com/api/json/get/EkyZfHLU_");
     pessoa.responseType="json"
     pessoa.onload = function() {
-    console.log(pessoa.response)
 
-    
+    //aba de novos amigos
+
+    //someone1
+    var someoneimg1 = document.createElement("img");
+    var lugarsomeoneimg1 = document.getElementById("someoneimg1");
+    lugarsomeoneimg1.appendChild(someoneimg1);
+    someoneimg1.src = pessoa.response[11].imagem;
+
+    var someonep1 = document.createElement("p");
+    var lugarsomeonep1 = document.getElementById("someonep1");
+    lugarsomeonep1.appendChild(someonep1);
+    someonep1.innerHTML = pessoa.response[5].nome;
+
+    //someone2
+    var someoneimg2 = document.createElement("img");
+    var lugarsomeoneimg2 = document.getElementById("someoneimg2");
+    lugarsomeoneimg2.appendChild(someoneimg2);
+    someoneimg2.src = pessoa.response[0].imagem;
+
+    var someonep2 = document.createElement("p");
+    var lugarsomeonep2 = document.getElementById("someonep2");
+    lugarsomeonep2.appendChild(someonep2);
+    someonep2.innerHTML = pessoa.response[0].nome;
 
     var a = -1;
 
@@ -149,14 +170,18 @@ function amigos() {
             //REAÇÕES
             //REAÇÕES
 
+            
+
             imglike.addEventListener("click", function () {
                 if (plike.classList.contains("liked")) {
                     plike.classList.remove("liked");
                     plike.textContent--;
+                    plike.style.color = "black";
                 }
                else {
                 plike.classList.add("liked");
                 plike.textContent++;
+                plike.style.color = "red";
                }
             }
             );
@@ -167,10 +192,13 @@ function amigos() {
                 if (prepiu.classList.contains("liked")) {
                     prepiu.classList.remove("liked");
                     prepiu.textContent--;
+                    prepiu.style.color = "black";
                 }
                else {
                 prepiu.classList.add("liked");
                 prepiu.textContent++;
+                prepiu.style.color = "red";
+
                }
             }
             );
@@ -186,6 +214,8 @@ function amigos() {
     }
 
     console.log(pessoa.response[3].imagem);
+
+    
 
 }   
 
